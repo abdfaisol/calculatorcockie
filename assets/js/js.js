@@ -1,0 +1,50 @@
+
+
+
+$(".hitung").click(function(){
+//   dapatin nilai
+  var a = $(".data").text();
+//   Cek input jika ada benar maka lanjut
+  if(a != "data" || a != null){
+//     Cek Operator
+    var k = $(".operator").text();
+//     Convert string ke array integer
+    var bil = a.split(",");
+    var no = 0;
+    for(var i = 0; i < bil.length; i++){
+      bil[i] = Number(bil[i]);
+      if(Number.isNaN(bil[i])){
+        alert("error")
+        throw new Error("Kesalahan pada data")
+      }
+    }
+//     Logikaku menyala terang!!!
+    var hasil = 0
+    switch(k){
+      case "Max":
+        hasil = math.max(bil)
+      break;
+      case "Min":
+        hasil = math.min(bil)
+        break;
+      case "Modus":
+        hasil = math.mode(bil)
+      break;
+      case "Mean":
+        hasil = math.mean(bil)
+      break;
+      default:
+        alert("Sorry, error bro!")
+      throw new Error("Kesalahan pada operator")
+    }
+    var result = k+"{"+a.split(",")+"} = "+hasil;
+    $(".resultp").text(result)
+    $(".historyku").append("<p>"+result+"</p>")
+    $(".result").show()
+  }
+//   Jika ada kesalahan maka tidak dieksekusi
+  else{
+    alert("Data salah.")
+  }
+})
+

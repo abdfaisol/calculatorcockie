@@ -1,0 +1,102 @@
+p {
+  margin: 0;
+}
+
+.title {
+  width: 25%;
+}
+
+.btn-operasi, .btn-operasi:hover, .btn-operasi:focus, .btn-operasi:active {
+  background-color: #F2F2F2 !important;
+  border: none;
+  color: black !important;
+}
+
+.btn-submit, .btn-submit:hover, .btn-submit:active, .btn-submit:focus {
+  background-color: #FFFFFF !important;
+  border: 1px solid black;
+  color: #3749E8 !important;
+  font-weight: bold;
+  border-radius: 15vw;
+  padding: 5px 15px;
+}
+
+.flex-select {
+  flex-flow: wrap;
+}
+
+.flex-select .btn {
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.input-data {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  padding: 15px 10px;
+}
+
+.relative {
+  position: relative;
+}
+
+.data {
+  padding: 5px 10px;
+  background-color: #f4f4f4;
+  margin: 0 5px;
+  /*border-radius: 5px;*/
+  width: 75px;
+  text-align: left;
+  overflow: hidden;
+  height: 35px;
+}
+
+.history div {
+  margin: 15px 0;
+  font-size: 12px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.history {
+  background-color: rgb(237,168,118);
+  margin: 0 15px;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.pilihan-mode {
+  display: none;
+}
+
+.result {
+  margin: 15px 0;
+  background-color: rgb(227,226,226);
+  border-radius: 15px;
+  padding: 15px;
+  display: none;
+}
+
+.result p {
+  margin: 5px 0;
+}
+
+.col-md-3 {
+  padding: 0;
+}
+
+.ok {
+  display: none;
+}
+
+.msg {
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
